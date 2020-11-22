@@ -26,7 +26,7 @@ client.hastebin = async(text) => {
 //event
 client.on('ready', () => {
   console.log(`${client.user.tag} ready to serving ${client.guilds.cache.size} guild(s) and ${client.users.cache.size} user(s), with ${client.commands.size} command(s) total!`)
-  client.user.setActivity("MAINTENANCE", {type:"WATCHING"})
+  client.user.setActivity("n- help", {type:"LISTENING"})
 });
 
 const commandFile = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));

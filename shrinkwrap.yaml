@@ -14,6 +14,7 @@ dependencies:
   libsodium: 0.7.8
   node-opus: 0.3.3
   node-superfetch: 0.1.10
+  novelcovid: 1.2.7
   pretty-ms: 7.0.1
   simple-youtube-api: 5.2.1
   sodium: 3.0.2
@@ -1129,6 +1130,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-CvaGwVMztSMJLOeXPrez7fyfObdZqNUK1cPAEzLHrTybIua9pMdmmPR5YwtfNftIOMv3DPUhFaxsZMNTQO20Kg==
+  /novelcovid/1.2.7:
+    dependencies:
+      node-fetch: 2.6.1
+    dev: false
+    resolution:
+      integrity: sha512-Kfu4pzlBNpLSU+W4tC5oO5fEYB8k//TAK0FZUL/d/YvaEziMgfTlJkgipV5Nr60CwBZbixzyJp/H+gvx1BAyZg==
   /npm-bundled/1.1.1:
     dependencies:
       npm-normalize-package-bin: 1.0.1
@@ -1750,6 +1757,7 @@ specifiers:
   libsodium: ^0.7.4
   node-opus: ^0.3.3
   node-superfetch: ^0.1.10
+  novelcovid: ^1.2.6
   pretty-ms: ^7.0.0
   simple-youtube-api: ^5.2.1
   sodium: ^3.0.2

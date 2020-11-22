@@ -4,10 +4,10 @@ const track = new NovelCovid();
 
 module.exports = {
   name: "corona",
-  category: "info",
+  alias: ["covid", "covid19"],
   description: "Get the stats of corona",
   usage: "corona all or corona <country>",
-  aliases: ["covid", "covid19"],
+  category: "info",
   run: async (client, message, args) => {
     
     if(!args.length) {
@@ -19,7 +19,7 @@ module.exports = {
       
       let embed = new discord.MessageEmbed()
       .setTitle("Global Cases")
-      .setColor("#ff2050")
+      .setColor("RED")
       .setDescription("Sometimes cases number may differ from small amount.")
       .addField("Total Cases", corona.cases, true)
       .addField("Total Deaths", corona.deaths, true)
@@ -37,7 +37,7 @@ module.exports = {
       
       let embed = new discord.MessageEmbed()
       .setTitle(`${corona.country}`)
-      .setColor("#ff2050")
+      .setColor("YELLOW")
       .setDescription("Sometimes cases number may differ from small amount.")
       .addField("Total Cases", corona.cases, true)
       .addField("Total Deaths", corona.deaths, true)

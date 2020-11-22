@@ -1,10 +1,3 @@
-/*                                                             Client Developer Music Bot Example
-                                                         1. Put Bot Token and Youtube API Key in .env file
-                                                           2. Put Prefix and Your User ID in config.json
-                                                                          3. Modify It!
-                                                     
-                           © Client Developer 2020 | Please, do not use our project as a commercial project. Instead, you can contribute on writing it                         */
-
 const discord = require("discord.js");
 const client = new discord.Client({disableMentions:"everyone"})
 const db = new Map()
@@ -33,7 +26,7 @@ client.hastebin = async(text) => {
 //event
 client.on('ready', () => {
   console.log(`${client.user.tag} ready to serving ${client.guilds.cache.size} guild(s) and ${client.users.cache.size} user(s), with ${client.commands.size} command(s) total!`)
-  client.user.setActivity("n- help", {type:"LISTENING"})
+  client.user.setActivity("MAINTENANCE", {type:"WATCHING"})
 });
 
 const commandFile = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));
@@ -56,7 +49,7 @@ client.on('message', msg => {
     const embed = new discord.MessageEmbed()
     .setDescription(`:wave: | My prefix is ${prefix}`)
     .setColor("YELLOW")
-    .setFooter("© Nordd Recmand 2020")
+    .setFooter("Nordd Universe 2020")
     msg.channel.send(embed)
   }
   if(msg.content == prefix) {
@@ -64,7 +57,7 @@ client.on('message', msg => {
     .setDescription(`Hey, It's me!
 You can type ${prefix}help to get bot commands list`)
     .setColor("YELLOW")
-    .setFooter("© Nordd Recmand 2020")
+    .setFooter("Nordd Universe 2020")
     return msg.channel.send(embed)
   }
   let args = msg.content.slice(prefix.length).trim().split(" ");

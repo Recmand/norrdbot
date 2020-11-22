@@ -10,7 +10,7 @@ module.exports = {
     let lup;
     const mbed = new MessageEmbed()
     .setTitle(`${client.user.username} music stats`)
-    .setFooter("© Nordd Recmand 2020")
+    .setFooter("Nordd Universe 2020")
     .setColor("YELLOW")
     .addField("Uptime", uptime)
     if (!serverQueue) return message.channel.send(mbed).catch(console.error);

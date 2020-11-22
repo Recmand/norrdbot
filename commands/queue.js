@@ -13,7 +13,7 @@ module.exports = {
       .setTitle("Music Queue")
       .setDescription(serverQueue.songs.map((song, index) => `${index + 1}. ${song.title}`))
       .setColor("YELLOW")
-      .setFooter("© Nordd Recmand 2020")
+      .setFooter("Nordd Universe 2020")
 
     queueEmbed.setTimestamp();
     return message.channel.send(queueEmbed);

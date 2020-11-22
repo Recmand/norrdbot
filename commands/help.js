@@ -11,7 +11,7 @@ module.exports = {
        helpembed.addField(`${cmd.name} (${cmd.alias})`, cmd.description)
      })
      helpembed.setColor("YELLOW")
-     .setFooter("© Nordd Recmand 2020")
+     .setFooter("Nordd Universe 2020")
      msg.channel.send(helpembed);
   }
 }

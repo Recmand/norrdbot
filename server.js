@@ -23,6 +23,8 @@ client.hastebin = async(text) => {
   return `https://bin-clientdev.glitch.me/${body.key}`
 }
 
+const commands = require ("./commands")
+
 //event
 client.on('ready', () => {
   console.log(`${client.user.tag} ready to serving ${client.guilds.cache.size} guild(s) and ${client.users.cache.size} user(s), with ${client.commands.size} command(s) total!`)
